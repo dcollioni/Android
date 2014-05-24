@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FirstProject</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="say_hello">Say Hello!</string>
+    <string name="first_number">Number 1</string>
+    <string name="second_number">Number 2</string>
+    <string name="result">Result</string>
+    <string name="calculate">Run</string>
+    
+    <string-array name="operation_options">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+    </string-array>
+
+</resources>

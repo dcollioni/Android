@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dcollioni.firstproject.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/tvHelloWorld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/btnSayHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvHelloWorld"
+        android:layout_below="@+id/tvHelloWorld"
+        android:text="@string/say_hello"
+        android:onClick="onBtnSayHelloClick" />
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSayHello"
+        android:layout_below="@+id/btnSayHello"
+        android:layout_marginTop="26dp"
+        android:columnCount="3" >
+
+        <EditText
+            android:id="@+id/firstNumber"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:hint="@string/first_number"
+            android:inputType="numberDecimal"
+            android:labelFor="@+id/firstNumber" >
+
+            <requestFocus />
+        </EditText>
+        
+        <Spinner
+            android:id="@+id/operation"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="0"
+            android:entries="@array/operation_options" />
+
+        <EditText
+            android:id="@+id/secondNumber"
+            android:layout_column="2"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:hint="@string/second_number"
+            android:inputType="numberDecimal"
+            android:labelFor="@+id/secondNumber" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="1"
+            android:text="@string/calculate" />
+        
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="fill_parent"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:hint="@string/result"
+            android:inputType="numberDecimal"
+            android:labelFor="@+id/result"
+            android:enabled="false" />
+    </GridLayout>
+    
+</RelativeLayout>
