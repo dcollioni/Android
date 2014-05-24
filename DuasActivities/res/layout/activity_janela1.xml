@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.duasactivities.Janela1"
+    tools:ignore="MergeRootFrame"
+    android:background="@android:color/black" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="@string/usuario"
+            android:textColor="@android:color/holo_blue_light" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+            android:textColor="@android:color/holo_blue_light" />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/entrar"
+            android:textColor="@android:color/holo_blue_light" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
