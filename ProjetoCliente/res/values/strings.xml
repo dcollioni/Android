@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProjetoCliente</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="nome">Nome:</string>
+    <string name="estado_civil">Estado civil:</string>
+    <string name="preferencias">Preferências:</string>
+    <string name="cartao_credito">Cartão de crédito:</string>
+    <string name="solteiro">Solteiro</string>
+    <string name="casado">Casado</string>
+    <string name="conta_corrente">Conta corrente</string>
+    <string name="ativo">Ativo</string>
+    <string name="inativo">Inativo</string>
+    <string name="criar">Criar</string>
+
+</resources>
