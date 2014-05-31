@@ -5,6 +5,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="ok">OK</string>
+    <string name="msg1">Mensagem 1</string>
+    <string name="msg2">Mensagem 2</string>
+    <string name="msg3">Mensagem 3</string>
+    <string name="msg4">Mensagem 4</string>
     
     <string-array name="paises">
         <item>Argentina</item>

@@ -6,18 +6,27 @@ import com.example.exemplospinner.R.id;
 import android.R.layout;
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.ComponentName;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.SubMenu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.widget.*;
 
 public class MainActivity extends Activity {
 
 	Button btnOK;
 	Spinner spPais;
+	final int MSG1 = 0;
+	final int MSG2 = 1;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +71,53 @@ public class MainActivity extends Activity {
 				Toast.makeText(getBaseContext(), selectedItem, Toast.LENGTH_SHORT).show();
 			}
 		});
+        
+        this.registerForContextMenu(btnOK);
+        this.registerForContextMenu(spPais);
+    }
+    
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v,
+    		ContextMenuInfo menuInfo) {
+    	
+    	if (v == btnOK) {
+    		//menu.add(MSG1, MSG1, 100, "Mensagem 1");
+    		//menu.add(MSG2, MSG2, 200, "Mensagem 2");
+    		
+    		getMenuInflater().inflate(R.menu.ctx1, menu);
+    	}
+    	else if (v == spPais) {
+    		//menu.add(MSG1, MSG1, 100, "Mensagem 3");
+    		//menu.add(MSG2, MSG2, 200, "Mensagem 4");
+    		
+    		getMenuInflater().inflate(R.menu.ctx2, menu);
+    	}
+    	
+    	super.onCreateContextMenu(menu, v, menuInfo);
+    }
+    
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+    	// TODO Auto-generated method stub
+    	
+    	Toast.makeText(getBaseContext(), item.getTitle() + " id: " + item.getItemId(), Toast.LENGTH_SHORT).show();
+    	
+    	int id = item.getItemId();
+    	
+    	switch (id) {
+		case MSG1:
+			
+			break;
+			
+		case MSG2:
+			
+			break;
+
+		default:
+			break;
+		}
+    	
+    	return super.onContextItemSelected(item);
     }
 
     @Override
