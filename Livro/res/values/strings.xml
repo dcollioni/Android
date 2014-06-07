@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Livro</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Livros</string>
+    <string name="add">Adicionar</string>
+    <string name="title_activity_tela_cadastro">TelaCadastro</string>
+    
+    <string name="bookTitle">Título</string>
+    <string name="bookAuthor">Autor</string>
+    <string name="bookChapter">Capítulo</string>
+    <string name="bookPage">Página</string>
+    <string name="bookConfirm">Confirmar</string>
+    <string name="bookCancel">Cancelar</string>
+
+</resources>
